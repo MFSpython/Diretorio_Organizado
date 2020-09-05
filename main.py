@@ -6,7 +6,12 @@ def criar_pasta_local():
     pasta_atual = os.path.dirname(os.path.abspath(__file__))
     #lista_aquivos = os.listdir(pasta_atual)
     for (dirpath, dirnames, filenames) in os.walk(pasta_atual):
-        print(filenames)
+        if(dirpath == pasta_atual):
+            filenames = filenames
+            print(filenames[0])
+            break
+        else:
+            continue
   
 
 
