@@ -10,7 +10,7 @@ def cria_pasta():
         arq = os.path.splitext(arquivo)[1][1:].capitalize()
 
         if arquivo.lower() == 'main.py':
-            print(f"Arquivo {arquivo} inguinorado")
+            print(f"Arquivo {arquivo} ignorado")
 
         else:
             if arq not in diretorios and arq != "":
